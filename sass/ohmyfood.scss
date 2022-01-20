@@ -1,6 +1,7 @@
 body{
     background: white;
     padding: 0;
+    margin: 0;
 }
 header{
     display: flex;
@@ -9,5 +10,28 @@ header{
     img{
         padding: 19px 0px 19px 0px;
         width: 46%;
+    }
+}
+#localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAEAEA;
+    padding: 19px 0px 19px 0px;
+}
+.searchBar{
+    display: flex;
+    
+    background-color: #EAEAEA;
+    color: black;
+    input{
+        border: none;
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+        font-size: 14px;
+        outline: none;
     }
 }
