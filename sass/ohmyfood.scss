@@ -1,3 +1,21 @@
+$colorPrimary: #9356DC;
+$colorSecondary: #FF79DA;
+$colorTertiary: #99E2D0;
+$shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient($colorSecondary, $colorPrimary);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    box-shadow: $shadow;
+
+}
+
 body{
     background: white;
     padding: 0;
@@ -8,7 +26,7 @@ header{
     justify-content: center;
     align-items: center;
     img{
-        padding: 19px 0px 19px 0px;
+        padding: 19px 0px 12px 0px;
         width: 46%;
     }
 }
@@ -18,10 +36,11 @@ header{
     align-items: center;
     background: #EAEAEA;
     padding: 19px 0px 19px 0px;
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.3);
 }
 .searchBar{
     display: flex;
-    
+    width: 45%;
     background-color: #EAEAEA;
     color: black;
     input{
@@ -34,4 +53,26 @@ header{
         font-size: 14px;
         outline: none;
     }
+}
+#reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 15px 30px 45px 30px;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 28px;
+    }
+    
+
+
+}
+#fonctionnement{
+    background: white;
 }
