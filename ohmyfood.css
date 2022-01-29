@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
 }
-body h2 {
+body h2, body h3, body p {
   font-family: "Roboto", sans-serif;
 }
 body .btn {
@@ -33,6 +33,7 @@ body .step {
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  font-weight: 600;
 }
 body .ball {
   display: flex;
@@ -41,8 +42,8 @@ body .ball {
   height: 50px;
   background: #9356DC;
   color: white;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 25px;
   margin-left: -8px;
   font-size: 11px;
@@ -83,6 +84,7 @@ header img {
   font-size: 14px;
   outline: none;
   color: #353535;
+  font-weight: 600;
 }
 
 #reservation {
@@ -101,7 +103,7 @@ header img {
   margin-top: -10px;
   margin-bottom: 28px;
   color: #353535;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -112,8 +114,12 @@ header img {
   align-items: center;
   padding: 20px 20px 40px 20px;
 }
+#fonctionnement h2 {
+  margin-bottom: 31px;
+}
 #fonctionnement i {
   color: #7e7e7e;
+  font-size: large;
 }
 
 #restaurants {
@@ -130,6 +136,9 @@ header img {
   margin-top: 20px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.carte:last-child {
+  margin-bottom: 40px;
 }
 .carte img {
   height: 174px;
@@ -161,10 +170,37 @@ article h3 {
 }
 article p {
   margin: 0;
+  font-weight: 300;
 }
 
 footer {
   background: #353535;
+  color: white;
+  padding: 20px;
+}
+footer h3 {
+  margin-top: 0;
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  font-size: medium;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+footer ul :nth-child(1) i {
+  font-size: small;
+}
+footer ul :nth-child(2) i {
+  font-size: x-small;
+}
+footer ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+footer ul li i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=ohmyfood.css.map */
