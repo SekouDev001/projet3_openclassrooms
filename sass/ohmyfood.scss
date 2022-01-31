@@ -8,9 +8,7 @@ body{
     background: white;
     padding: 0;
     margin: 0;
-    h2, h3, p {
-        font-family: 'Roboto', sans-serif;
-    }
+    font-family: 'Roboto', sans-serif;
 
 .btn{
     display: flex;
@@ -39,7 +37,7 @@ body{
     border-radius: 20px;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .ball{
     display: flex;
@@ -52,7 +50,8 @@ body{
     height: 22px;
     border-radius: 25px;
     margin-left: -8px;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 400;
 
 }
 
@@ -87,7 +86,7 @@ header{
         justify-content: center;
         align-items: center;
         margin-left: 12px;
-        font-size: 14px;
+        font-size: 16px;
         outline: none;
         color: #353535;
         font-weight: 600;
@@ -102,6 +101,7 @@ header{
     padding: 15px 30px 45px 30px;
     h2{
         text-align: center;
+        width: 240px;
     }
     p{
         text-align: center;
@@ -109,7 +109,7 @@ header{
         margin-bottom: 28px;
         color: #353535;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 18px;
     }
     
 
@@ -175,7 +175,8 @@ article{
     margin-left: 14px;
     h3{
         margin: 0;
-        
+        margin-bottom: 3px;
+        font-size: large;
     }
     p{
         margin: 0;
@@ -185,29 +186,32 @@ article{
 footer{
     background: #353535;
     color: white;
-    padding: 20px;
+    padding: 26px;
     h3{
         margin-top: 0;
         font-family: 'Shrikhand', cursive;
         font-weight: 100;
-        font-size: medium;
+        font-size: large;
     }
     ul{
         list-style-type: none;
         padding-left: 0;
         margin: 0;
-        :nth-child(1) i{
-            font-size: small;
-        }
-        :nth-child(2) i{
-            font-size: x-small;
-        }
+        font-weight: 400;
         li{
             margin-bottom: 8px;
-            font-size: 16px;
-            i{
-                margin-right: 10px;
-            }
+            font-size: 16px;           
+        }
+        :nth-child(1) i{
+            font-size: small;
+            margin-right: 12px;            
+        }
+        :nth-child(2) i{
+            font-size: small;
+            margin-right: 8px;
+        }
+        :nth-child(3), :nth-child(4){
+            font-weight: 300;
         }
     }
 
