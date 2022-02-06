@@ -3,7 +3,9 @@ $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
 $shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $colorgrey: #7e7e7e;
-
+.redBorder{
+    border: 1px solid red;
+}
 body{
     background: white;
     padding: 0;
@@ -21,6 +23,12 @@ body{
     padding-right: 20px;
     color: white;
     box-shadow: $shadow;
+    &--commander{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 83px;
+    }
 }
 .titre{
     width: 100%;
@@ -95,10 +103,103 @@ header{
 .banniere{
     height: 260px;
     width: 100%;
-    img{
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
+    max-width: 375px;
+    background-size: contain;
+    &--alafrancaise{
+        background-image: url("./Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+    &--lanoteenchantee{
+        background-image: url("./Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    &--ledelicedessens{
+        background-image: url("./Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
+    &--lapalettedugout{
+        background-image: url("./Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+    
+       
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    padding-right: 12px;
+    background: #f6f6f6;
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: -60px;
+    h2{
+        font-family: 'Shrikhand', 'cursive';
+    }
+}
+.titreRestaurant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 12px 0;
+    h2{
+        margin-left: 10px;
+        font-weight: 500;
+        font-size: 28px;
+    }
+    i{
+        font-size: 25px;
+        font-weight: 100;
+        margin-right: 20px;
+    }
+
+}
+.service{
+    font-size: large;
+    font-weight: 100;
+    color: #1e1e1e;
+    
+    }
+.setChoix{
+    display: flex;
+}
+.choix{
+    display: flex;
+    width: 327px;
+    padding: 11px;
+    background: #ffffff;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+    &:last-child{
+        margin-bottom: 40px;}
+    h3{
+        font-weight: 500;
+    }
+   
+}
+.plats p{
+    font-size: smaller;
+}
+.prix{
+    display: flex;
+    flex-direction: column-reverse;
+    p{
+        font-weight: 500;
+        font-size: smaller;
+    }
+    &--checked{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        width: 65px;
+        overflow: hidden;
+        transform: translateX(0);
+        background: $colorTertiary;
+        color: white;
+        &:hover{
+            overflow: visible;
+            transform: translateX(-65px);
+        }
     }
 }
 #reservation{
