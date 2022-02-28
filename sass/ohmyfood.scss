@@ -3,6 +3,7 @@ $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
 $shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $colorgrey: #7e7e7e;
+
 @keyframes slide {
     0% {
       opacity: 0;
@@ -175,35 +176,47 @@ header{
     justify-content: center;
     align-items: center;
     height: 65px;
-    width: 65px;   
+    width: 65px;
+    min-width: 65px;   
     background: $colorTertiary;
     color: white;
     transform:translateX(0px);
     transition: transform 400ms;
-    margin-right: -120px;
+    
+    
+    
+    
+    
 }   
 
 .choix{
     display: flex;
-    width: 327px;
+    width: 318px;
     background: #ffffff;
-    justify-content: space-between;
     border-radius: 15px;
     margin-bottom: 14px;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
     overflow: hidden;
     transition: all 400ms;
     
+    
+    
     &:hover{
         .checked{   
             display: flex;
-            transform: translateX(-120px);   
+            transform: translateX(-65px);   
         }
         .prix{
             transform: translateX(-65px);
         }
         .plats{
-            width: 209px;
+            width: 249px;
+            h3{
+                width: 209px;
+            }
+            p{
+                width: 209px;
+            }
         }
     }
     &:last-child{
@@ -221,15 +234,25 @@ header{
     }
    
 }
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    
+    
+}
 .plats{
     margin: 11px;
     overflow: hidden;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
     transition:  400ms;
+    width: 249px;
+    
 }
 .plats p{
     font-size: smaller;
+    
 }
 .prix{
     display: flex;
@@ -237,6 +260,7 @@ header{
     margin: 11px;
     transform:translateX(0px);
     transition: transform 400ms;
+    
     p{
         font-weight: 500;
         font-size: smaller;
