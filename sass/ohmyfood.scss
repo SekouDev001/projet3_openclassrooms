@@ -167,8 +167,22 @@ header{
     font-size: large;
     font-weight: 100;
     color: #1e1e1e;
-    
+    .service_nom{
+        display: inline-block;
+        position: relative;   
+        margin-bottom: 5px;
     }
+    .service_nom::after{
+        content: "ici";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: red;
+        bottom: 30px;  
+        left: 3px;
+        }
+}
+
 
 .checked{
     
@@ -181,13 +195,10 @@ header{
     background: $colorTertiary;
     color: white;
     transform:translateX(0px);
-    transition: transform 400ms;
-    
-    
-    
-    
-    
-}   
+    transition: transform 400ms;  
+}
+
+
 
 .choix{
     display: flex;
@@ -248,12 +259,15 @@ header{
     text-overflow: ellipsis;
     transition:  400ms;
     width: 249px;
+    p{
+        font-size: smaller;  
+    }
     
 }
-.plats p{
-    font-size: smaller;
-    
-}
+
+
+
+ 
 .prix{
     display: flex;
     flex-direction: column-reverse;
