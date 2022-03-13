@@ -269,8 +269,8 @@ header{
     transform:translateX(0px);
     transition: transform 400ms;
     i{
-        transform: rotate(1turn);
-        transition: all 0.4;
+        
+        transition: all 0.4s;
     }  
 }
 
@@ -321,7 +321,8 @@ header{
             display: flex;
             transform: translateX(-65px);
             i{
-                rotate: (1turn);
+                transform: rotate(360deg);
+                
             }   
         }
         .prix{
