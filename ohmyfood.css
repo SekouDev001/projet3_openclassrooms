@@ -366,10 +366,6 @@ header img {
   flex-direction: column;
   align-items: center;
   padding: 20px 20px 40px 20px;
-  /*i{
-      color: #7e7e7e;
-      font-size: large;
-  }*/
 }
 .fonctionnement h2 {
   margin-bottom: 31px;
@@ -389,6 +385,23 @@ header img {
   margin-top: 20px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.carte--new::after {
+  content: "Nouveau";
+  display: flex;
+  height: 29px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #008766;
+  position: absolute;
+  background-color: #99E2D0;
+  top: 13px;
+  right: 12px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .carte:last-child {
   margin-bottom: 40px;

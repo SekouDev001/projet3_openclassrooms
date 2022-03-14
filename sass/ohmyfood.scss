@@ -420,18 +420,13 @@ header{
     h2{
         margin-bottom: 31px;
     }
-    /*i{
-        color: #7e7e7e;
-        font-size: large;
-    }*/
+    
 
 }
 #restaurants{
     padding: 5%;
     align-items: center;
-    background:#f6f6f6
-    
-    
+    background:#f6f6f6   
 }
 .carte{
     display: flex;
@@ -441,6 +436,27 @@ header{
     margin-top: 20px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+    position: relative;
+    &--new{
+            &::after{
+            content: "Nouveau";
+            display: flex;
+            height: 29px;
+            width: 80px;
+            justify-content: center;
+            align-items: center;
+            color: #008766;
+            position: absolute;
+            background-color: $colorTertiary;
+            top: 13px;
+            right: 12px;
+            border-radius: 3px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+    
+   
     &:last-child{
         margin-bottom: 40px;
     }
