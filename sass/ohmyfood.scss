@@ -477,8 +477,25 @@ header{
         border-radius: 0 0 15px 15px;
         i{
             margin-right: 23px;
-            font-size: 21px;
-            font-weight: lighter;
+            font-size: 21px;   
+        }
+        .fal{
+            position: relative;
+            font-weight: 100;
+        }
+        .fas{
+            color: transparent;
+            background-image: linear-gradient($colorSecondary, $colorPrimary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            position: absolute;
+            right: 0px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.8s;
+            &:hover{
+                opacity: 1;
+            }
         }
         
     }

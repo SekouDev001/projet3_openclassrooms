@@ -425,7 +425,24 @@ header img {
 .carte .content i {
   margin-right: 23px;
   font-size: 21px;
-  font-weight: lighter;
+}
+.carte .content .fal {
+  position: relative;
+  font-weight: 100;
+}
+.carte .content .fas {
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.carte .content .fas:hover {
+  opacity: 1;
 }
 
 article {
