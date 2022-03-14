@@ -1,6 +1,7 @@
 $colorPrimary: #9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
+$colorQuartiary: #f5edff;
 $colorPrimaryBis: #ad80e5;
 $colorSecondaryBis: #ffade8;
 $colorTertiaryBis: 	#bfede2;
@@ -31,7 +32,37 @@ body{
         color: white;
         box-shadow: $shadow;
         position: relative;
-        &::after{
+        &:hover{
+            
+            &::after{
+                opacity: 1;
+            }
+            
+        }
+        &--explorer{
+                &::after{
+                content: "Explorer nos restaurants";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border-radius: 25px;
+                background-image: linear-gradient($colorSecondaryBis, $colorPrimaryBis);
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+                box-shadow: $shadow;
+                z-index: (1);
+                position: absolute;
+                opacity: 0;           
+            }   
+        }         
+        &--commander{
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 83px;
+            &::after{
                 content: "Commander";
                 display: flex;
                 justify-content: center;
@@ -49,18 +80,6 @@ body{
                 
                 
             }
-        &:hover{
-            
-            &::after{
-                opacity: 1;
-            }
-            
-        }
-        &--commander{
-            padding-left: 50px;
-            padding-right: 50px;
-            margin-top: 10px;
-            margin-bottom: 83px;
             
         }
     }
@@ -80,6 +99,17 @@ body{
         box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
         margin-bottom: 20px;
         font-weight: 500;
+        i{
+            color: #7e7e7e;
+            font-size: large;
+        }
+        &:hover{
+            background-color: $colorQuartiary;
+            i{
+                color: $colorPrimary;            
+            }
+        }
+
     }
     .ball{
         display: flex;
@@ -98,6 +128,8 @@ body{
     }
 
 }
+
+
 header{
     display: flex;
     justify-content: center;
@@ -379,7 +411,7 @@ header{
 
 
 }
-#fonctionnement{
+.fonctionnement{
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -388,10 +420,10 @@ header{
     h2{
         margin-bottom: 31px;
     }
-    i{
+    /*i{
         color: #7e7e7e;
         font-size: large;
-    }
+    }*/
 
 }
 #restaurants{
