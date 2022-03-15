@@ -10,6 +10,16 @@ $shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $shadow-after: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $colorgrey: #7e7e7e;
 
+@keyframes hidden{
+    0%{opacity: 1;}
+    99%{opacity: 0;}
+    100%{z-index: -3;}
+}
+@keyframes load-spinner {
+    to{
+        transform: rotate(5turn);
+    }
+}
 
 .redBorder{
     border: 1px solid red;
@@ -19,6 +29,31 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    .load-spinner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9) ;
+        animation: hidden 8s;
+        animation-fill-mode: forwards;
+        
+        
+
+        &::after{
+            content: "";
+            width: 300px;
+            height: 300px;
+            border: 10px solid $colorPrimary;
+            border-top-color: $colorSecondary;
+            border-radius: 50%;
+            animation: load-spinner 3s cubic-bezier(.8,-0.31,.46,1.55);   
+        }
+    }
     a:link, a:visited{
         text-decoration: none;
         color: black;

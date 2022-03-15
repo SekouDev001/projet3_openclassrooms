@@ -1,3 +1,19 @@
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -3;
+  }
+}
+@keyframes load-spinner {
+  to {
+    transform: rotate(5turn);
+  }
+}
 .redBorder {
   border: 1px solid red;
 }
@@ -7,6 +23,28 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  position: relative;
+}
+body .load-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: hidden 8s;
+  animation-fill-mode: forwards;
+}
+body .load-spinner::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  border: 10px solid #9356DC;
+  border-top-color: #FF79DA;
+  border-radius: 50%;
+  animation: load-spinner 3s cubic-bezier(0.8, -0.31, 0.46, 1.55);
 }
 body a:link, body a:visited {
   text-decoration: none;
