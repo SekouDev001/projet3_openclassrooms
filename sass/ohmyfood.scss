@@ -19,6 +19,10 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    a:link, a:visited{
+        text-decoration: none;
+        color: black;
+    }
 
     .btn{
         display: flex;
@@ -426,7 +430,8 @@ header{
 #restaurants{
     padding: 5%;
     align-items: center;
-    background:#f6f6f6   
+    background:#f6f6f6;
+       
 }
 .carte{
     display: flex;
@@ -516,6 +521,10 @@ footer{
     background: #353535;
     color: white;
     padding: 26px;
+    a:link, a:visited{
+        text-decoration: none;
+        color: white;
+    }
     h3{
         margin-top: 0;
         font-family: 'Shrikhand', cursive;

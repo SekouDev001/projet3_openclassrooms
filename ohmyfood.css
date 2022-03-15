@@ -8,6 +8,10 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+body a:link, body a:visited {
+  text-decoration: none;
+  color: black;
+}
 body .btn {
   display: flex;
   justify-content: center;
@@ -462,6 +466,10 @@ footer {
   background: #353535;
   color: white;
   padding: 26px;
+}
+footer a:link, footer a:visited {
+  text-decoration: none;
+  color: white;
 }
 footer h3 {
   margin-top: 0;
