@@ -9,7 +9,26 @@ $colorTertiaryBis: 	#bfede2;
 $shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $shadow-after: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $colorgrey: #7e7e7e;
-
+@keyframes appear-service{
+    0%{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes appear-choix{
+    0%{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 @keyframes hidden{
     0%{opacity: 1;}
     99%{opacity: 0;}
@@ -249,6 +268,7 @@ header{
     align-items: center;
     border-radius: 40px 40px 0 0;
     margin-top: -60px;
+    
     h2{
         font-family: 'Shrikhand', 'cursive';
     }
@@ -259,6 +279,8 @@ header{
     align-items: center;
     width: 100%;
     margin: 12px 0;
+    position: relative;
+    max-width: 445px;
     h2{
         margin-left: 10px;
         font-weight: 500;
@@ -272,7 +294,7 @@ header{
       
     }
     .fal{
-        position: relative;
+        font-weight: lighter;
     }
     .fas{
         color: transparent;
@@ -280,7 +302,7 @@ header{
         -webkit-background-clip: text;
         background-clip: text;
         position: absolute;
-        right: 12px;
+        right: 0px;
         z-index: 1;
         opacity: 0;
         transition: opacity 0.8s;
@@ -295,6 +317,22 @@ header{
     font-size: large;
     font-weight: 100;
     color: #1e1e1e;
+    animation: appear-service 400ms ease-in-out ;
+    animation-fill-mode: backwards;
+    &:nth-child(2){
+        
+        animation-delay: 100ms;
+    }
+    &:nth-child(3){
+        
+        animation-delay: 200ms;
+    }
+    &:nth-child(4){
+        
+        animation-delay: 300ms;
+    }
+ 
+    
     
     
     .service_nom {
@@ -324,7 +362,8 @@ header{
 .content{
     display: flex;
     justify-content: space-between;
-    width: 327px;  
+    width: 327px;
+      
 }
 
 .checked{
@@ -384,6 +423,33 @@ header{
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
     overflow: hidden;
     transition: all 400ms;
+    animation: appear-choix 1000ms ease-out ;
+    animation-fill-mode: backwards;
+    &:nth-child(1){
+        
+        animation-delay: 200ms;
+        animation-fill-mode: backwards;
+    }
+    &:nth-child(2){
+        
+        animation-delay: 300ms;
+        animation-fill-mode: backwards;
+    }
+    &:nth-child(3){
+        
+        animation-delay: 400ms;
+        animation-fill-mode: backwards;
+    }
+    &:nth-child(4){
+        
+        animation-delay: 500ms;
+        animation-fill-mode: backwards;
+    }
+    &:nth-child(5){
+        
+        animation-delay: 600ms;
+        animation-fill-mode: backwards;
+    }
     
     
     

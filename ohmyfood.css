@@ -1,3 +1,23 @@
+@keyframes appear-service {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes appear-choix {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 @keyframes hidden {
   0% {
     opacity: 1;
@@ -236,6 +256,8 @@ header img {
   align-items: center;
   width: 100%;
   margin: 12px 0;
+  position: relative;
+  max-width: 445px;
 }
 .titreRestaurant h2 {
   margin-left: 10px;
@@ -247,7 +269,7 @@ header img {
   margin-right: 20px;
 }
 .titreRestaurant .fal {
-  position: relative;
+  font-weight: lighter;
 }
 .titreRestaurant .fas {
   color: transparent;
@@ -255,7 +277,7 @@ header img {
   -webkit-background-clip: text;
   background-clip: text;
   position: absolute;
-  right: 12px;
+  right: 0px;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.8s;
@@ -268,6 +290,17 @@ header img {
   font-size: large;
   font-weight: 100;
   color: #1e1e1e;
+  animation: appear-service 400ms ease-in-out;
+  animation-fill-mode: backwards;
+}
+.service:nth-child(2) {
+  animation-delay: 100ms;
+}
+.service:nth-child(3) {
+  animation-delay: 200ms;
+}
+.service:nth-child(4) {
+  animation-delay: 300ms;
 }
 .service .service_nom {
   position: relative;
@@ -346,6 +379,28 @@ header img {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 400ms;
+  animation: appear-choix 1000ms ease-out;
+  animation-fill-mode: backwards;
+}
+.choix:nth-child(1) {
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+}
+.choix:nth-child(2) {
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+}
+.choix:nth-child(3) {
+  animation-delay: 400ms;
+  animation-fill-mode: backwards;
+}
+.choix:nth-child(4) {
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+.choix:nth-child(5) {
+  animation-delay: 600ms;
+  animation-fill-mode: backwards;
 }
 .choix:hover .checked {
   display: flex;
