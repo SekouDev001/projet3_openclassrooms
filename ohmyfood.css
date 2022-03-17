@@ -22,16 +22,14 @@
   0% {
     opacity: 1;
   }
-  99% {
-    opacity: 0;
-  }
   100% {
     z-index: -3;
+    opacity: 0;
   }
 }
 @keyframes load-spinner {
   to {
-    transform: rotate(5turn);
+    transform: rotate(7turn);
   }
 }
 .redBorder {
@@ -54,7 +52,7 @@ body .load-spinner {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  animation: hidden 8s;
+  animation: hidden 3s ease-in-out;
   animation-fill-mode: forwards;
 }
 body .load-spinner::after {
@@ -64,7 +62,7 @@ body .load-spinner::after {
   border: 10px solid #9356DC;
   border-top-color: #FF79DA;
   border-radius: 50%;
-  animation: load-spinner 3s cubic-bezier(0.8, -0.31, 0.46, 1.55);
+  animation: load-spinner 3s linear;
 }
 body a:link, body a:visited {
   text-decoration: none;

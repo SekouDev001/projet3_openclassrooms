@@ -32,12 +32,11 @@ $colorgrey: #7e7e7e;
 }
 @keyframes hidden{
     0%{opacity: 1;}
-    99%{opacity: 0;}
-    100%{z-index: -3;}
+    100%{z-index: -3; opacity: 0;}
 }
 @keyframes load-spinner {
     to{
-        transform: rotate(5turn);
+        transform: rotate(7turn);
     }
 }
 
@@ -59,7 +58,7 @@ body{
         height: 100%;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.9) ;
-        animation: hidden 8s;
+        animation: hidden 3s ease-in-out;
         animation-fill-mode: forwards;
         
         
@@ -71,7 +70,7 @@ body{
             border: 10px solid $colorPrimary;
             border-top-color: $colorSecondary;
             border-radius: 50%;
-            animation: load-spinner 3s cubic-bezier(.8,-0.31,.46,1.55);   
+            animation: load-spinner 3s linear;   
         }
     }
     a:link, a:visited{
