@@ -9,6 +9,7 @@ $colorTertiaryBis: 	#bfede2;
 $shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $shadow-after: 0px 4px 10px 0px rgba(0,0,0,0.3);
 $colorgrey: #7e7e7e;
+
 @keyframes appear-service{
     0%{
         transform: translateY(20%);
@@ -94,6 +95,9 @@ body{
             
             &::after{
                 opacity: 1;
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
             }
             
         }
@@ -268,6 +272,7 @@ header{
     align-items: center;
     border-radius: 40px 40px 0 0;
     margin-top: -60px;
+    
     
     h2{
         font-family: 'Shrikhand', 'cursive';
@@ -618,6 +623,17 @@ article{
         font-weight: 300;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .trois{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+    
+
 footer{
     background: #353535;
     color: white;

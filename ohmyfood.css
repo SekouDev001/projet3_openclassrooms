@@ -85,6 +85,9 @@ body .btn {
 }
 body .btn:hover::after {
   opacity: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 body .btn--explorer::after {
   content: "Explorer nos restaurants";
@@ -555,6 +558,13 @@ article p {
   font-weight: 300;
 }
 
+@media screen and (min-width: 1024px) {
+  .trois {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 footer {
   background: #353535;
   color: white;
