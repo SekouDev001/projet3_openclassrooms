@@ -32,16 +32,21 @@
     transform: rotate(7turn);
   }
 }
-.redBorder {
-  border: 1px solid red;
-}
-
 body {
   background: white;
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
   position: relative;
+  /*
+      animation loader
+  */
+  /* 
+  bouton commander et explorer
+  */
+  /*
+      page d'accueil
+  */
 }
 body .load-spinner {
   display: flex;
@@ -167,6 +172,9 @@ body .ball {
   font-weight: 400;
 }
 
+/*
+    header
+*/
 header {
   display: flex;
   justify-content: center;
@@ -190,6 +198,9 @@ header img {
   max-width: 172px;
 }
 
+/*
+    localisation
+*/
 #localisation {
   display: flex;
   justify-content: center;
@@ -218,6 +229,12 @@ header img {
   font-weight: 600;
 }
 
+/*
+    pages restaurants
+*/
+/*
+    bannieres
+*/
 .banniere {
   width: auto;
   height: 260px;

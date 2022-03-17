@@ -40,15 +40,16 @@ $colorgrey: #7e7e7e;
     }
 }
 
-.redBorder{
-    border: 1px solid red;
-}
+
 body{
     background: white;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    /*
+        animation loader
+    */
     .load-spinner{
         display: flex;
         justify-content: center;
@@ -60,9 +61,6 @@ body{
         background-color: rgba(255, 255, 255, 0.9) ;
         animation: hidden 3s ease-in-out;
         animation-fill-mode: forwards;
-        
-        
-
         &::after{
             content: "";
             width: 300px;
@@ -77,7 +75,9 @@ body{
         text-decoration: none;
         color: black;
     }
-
+    /* 
+    bouton commander et explorer
+    */
     .btn{
         display: flex;
         justify-content: center;
@@ -144,6 +144,9 @@ body{
             
         }
     }
+    /*
+        page d'accueil
+    */
     .titre{
         width: 100%;
     }
@@ -189,7 +192,9 @@ body{
     }
 
 }
-
+/*
+    header
+*/
 
 header{
     display: flex;
@@ -214,6 +219,9 @@ header{
         
     }
 }
+/*
+    localisation
+*/
 #localisation{
     display: flex;
     justify-content: center;
@@ -241,6 +249,12 @@ header{
         font-weight: 600;
     }
 }
+/*
+    pages restaurants
+*/
+/*
+    bannieres
+*/
 .banniere{
     
     width: auto;
@@ -262,6 +276,7 @@ header{
     
        
 }
+
 #menu{
     display: flex;
     flex-direction: column;
